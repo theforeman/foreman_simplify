@@ -1,3 +1,5 @@
 module ForemanOpenstackSimplify
-  VERSION = "0.0.1"
+  unless defined? ::ForemanOpenstackSimplify::VERSION
+    VERSION = "0.0.1"
+  end
 end
