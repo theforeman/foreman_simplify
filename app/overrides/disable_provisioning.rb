@@ -7,13 +7,10 @@ Deface::Override.new(:virtual_path => 'home/_settings',
     previous_item_is_divider = false
     choices = setting_options.reject { |item| item[0] == :group && item[1] == "Provisioning" }.
                               reject do |item| # remove double dividers
-                               if previous_item_is_divider && item[0] == :divider
-                                 true
-                               else
-                                 previous_item_is_divider = item[0] == :divider
-                                 false
-                               end
-                             end
+                                result = previous_item_is_divider && item[0] == :divider
+                                previous_item_is_divider = item[0] == :divider
+                                result
+                              end
   %>
   END
 end
