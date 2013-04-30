@@ -1,5 +1,3 @@
-TrendsController.class_eval do
-  def index
-    render :text => "Not Implemented", :status => :not_implemented
-  end
+ForemanOpenstackSimplify::ControllerPatches.tap do |cp|
+  cp.not_implemented_ui_crud(TrendsController)
 end
