@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "foreman_openstack_simplify"
   gem.require_paths = ["lib"]
   gem.version       = ForemanOpenstackSimplify::VERSION
+
+  gem.add_runtime_dependency "deface"
 end
