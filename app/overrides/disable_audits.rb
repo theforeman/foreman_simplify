@@ -4,4 +4,4 @@ Deface::Override.new(:virtual_path => 'home/_topbar',
 
 Deface::Override.new(:virtual_path => 'hosts/_overview',
                      :name => 'disable_host_audits_button',
-                     :remove => %q{code[erb-loud]:contains('link_to_if_authorized("Audits"')})
+                     :remove => %q{code[erb-loud]:contains('hash_for_host_audits_path')})
