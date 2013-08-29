@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["jistr@redhat.com"]
   gem.description   = %q{Plugin for Foreman that simplifies the UI}
   gem.summary       = %q{Plugin for Foreman that simplifies the UI}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/theforeman/foreman_simplify"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
