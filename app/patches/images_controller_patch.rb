@@ -1,4 +1,4 @@
-ForemanOpenstackSimplify::ControllerPatches.tap do |cp|
+ForemanSimplify::ControllerPatches.tap do |cp|
   cp.not_implemented_ui_crud(ImagesController)
   ImagesController.skip_filter :find_compute_resource, :find_by_name
 

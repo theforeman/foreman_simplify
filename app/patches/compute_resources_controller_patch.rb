@@ -1,4 +1,4 @@
-ForemanOpenstackSimplify::ControllerPatches.tap do |cp|
+ForemanSimplify::ControllerPatches.tap do |cp|
   cp.not_implemented_ui_crud(ComputeResourcesController)
   ComputeResourcesController.skip_filter :find_by_id
 

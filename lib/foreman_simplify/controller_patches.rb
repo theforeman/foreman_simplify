@@ -1,4 +1,4 @@
-module ForemanOpenstackSimplify::ControllerPatches
+module ForemanSimplify::ControllerPatches
   class << self
 
     def not_implemented(controller_class, method_names, type = :text)
